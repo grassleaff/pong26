@@ -7,7 +7,7 @@
 using namespace std::chrono;
 
 const int PADDLE_HEIGHT = 4;
-const int WIN_SCORE = 1;
+const int WIN_SCORE = 5;
 const int BALL_SIZE = 2;
 
 const float INITIAL_SPEED = 0.30f;
@@ -318,7 +318,6 @@ int main() {
 
         refresh();
 
-        // ===== VITÓRIA =====
         if (score1 == WIN_SCORE || score2 == WIN_SCORE) {
             clear();
             mvprintw(maxY/2, maxX/2 - 10,
